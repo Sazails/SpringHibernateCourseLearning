@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Property file references here -->
+    <context:property-placeholder location="dataPacket.properties"/>
+
+
+    <!-- Define beans here -->
+    <!-- The Bean! -->
+    <bean id="myCharacter"
+          class="main.beans.Character">
+    </bean>
+    <!-- ==================== -->
+
+    <!-- Dependency Injection -->
+    <bean id="myHotCoffeeService"
+          class="main.dependencyInjection.HotCoffeeService">
+    </bean>
+
+    <bean id="myCoffeeClient"
+          class="main.dependencyInjection.Client">
+        <constructor-arg ref="myHotCoffeeService"/>
+    </bean>
+    <!-- ==================== -->
+
+    <!-- Setter Injection -->
+    <bean id="myColdCoffeeService"
+          class="main.setterInjection.ColdCoffeeService">
+    </bean>
+
+    <bean id="myCoffeeOwner"
+          class="main.setterInjection.Owner">
+        <property name="coffeeService" ref="myColdCoffeeService"/>
+    </bean>
+    <!-- ==================== -->
+
+    <!-- Literal Value Injection -->
+    <bean id="myOnlineUser"
+          class="main.injectLiteralValues.OnlineUser">
+        <property name="email" value="mail@email.com"/>
+        <property name="username" value="mailMan"/>
+    </bean>
+    <!-- ==================== -->
+
+    <!-- Injection From Properties File -->
+    <bean id="myDataPacket"
+          class="main.injectFromPropertiesFile.DataPacket">
+        <property name="id" value="${id}"/>
+        <property name="name" value="${name}"/>
+        <property name="data" value="${data}"/>
+    </bean>
+    <!-- ==================== -->
+
+</beans>
