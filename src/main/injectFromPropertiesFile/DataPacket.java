@@ -29,7 +29,7 @@ public class DataPacket {
         this.data = data;
     }
 
-    public void SendDataPacket(String locationID){
+    public void sendDataPacket(String locationID){
         System.out.println("Sending packet: " + this.toString() + " to location with ID: " + locationID);
     }
 

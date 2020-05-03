@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class SpringInjectionMain {
     public static void main(String[] args) {
         // load spring config
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("main/dependencyInjection/applicationContext.xml");
 
         // get bean from spring container
         Entity theClient = context.getBean("myCoffeeClient", Entity.class);

@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class SpringLiteralMain {
     public static void main(String[] args) {
         // load spring config
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("main/injectLiteralValues/applicationContext.xml");
 
         // get bean from spring container
         // We user OnlineUser instead of Entity because it contains the get and set methods.
