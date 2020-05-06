@@ -1,6 +1,6 @@
 package main.springBeansAndXml.injectLiteralValues;
 
-import main.springBeansAndXml.beansBasics.IEntity;
+import main.springBeansAndXml.beanBasics.IEntity;
 
 public class OnlineUser implements IEntity {
     private String email = null;
