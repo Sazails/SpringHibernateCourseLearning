@@ -5,7 +5,7 @@
   
 + beanLifecycle
 + beanScopes
-+ beansBasics
++ beanBasics
 + dependencyInjection
 + injectFromPropertiesFile
 + injectLiteralValues
@@ -24,5 +24,13 @@
     + fieldInjection
     + qualifier
     + setterInjection
+    
+</details>
+
+<details>
+<summary>springConfigWithJavaCode</summary>
+  
++ springBeanJavaCodeNoXml
++ springConfigJavaCodeNoXml
     
 </details>
