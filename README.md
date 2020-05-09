@@ -32,5 +32,6 @@
   
 + springBeanJavaCodeNoXml
 + springConfigJavaCodeNoXml
++ injectValuesFromPropertiesFile
     
 </details>
