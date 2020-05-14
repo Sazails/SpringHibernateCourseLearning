@@ -7,7 +7,14 @@
 </head>
 <body>
 
-    <form action="roastUser" method="get">
+    <h4>Roast One</h4>
+    <form action="roastUserOne" method="get">
+        <input type="text" name="userName" placeholder="What's your name?">
+        <input type="submit"/>
+    </form>
+    <hr>
+    <h4>Roast Two</h4>
+    <form action="roastUserTwo" method="get">
         <input type="text" name="userName" placeholder="What's your name?">
         <input type="submit"/>
     </form>
