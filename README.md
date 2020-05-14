@@ -1,4 +1,4 @@
-# SpringHibernateCourseLearning
+# Spring & Hibernate Learning
 <h4>Contains:</h4>
 <details>
 <summary>springBeansAndXml</summary>
