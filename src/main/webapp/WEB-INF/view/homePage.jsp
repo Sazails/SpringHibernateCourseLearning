@@ -10,6 +10,8 @@
     <h3>Welcome to the home page!</h3>
     <hr>
     <a href="hello/showForm">Hello Form</a>
+    <br>
+    <a href="user/showForm">User Form</a>
 
 </body>
 </html>
