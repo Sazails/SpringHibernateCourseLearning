@@ -26,6 +26,10 @@
     <form:errors path="postalCode" cssClass="error"/>
     <br>
 
+    Customer Tag: <form:input path="customerTag" />
+    <form:errors path="customerTag" cssClass="error"/>
+    <br>
+
     <input type="submit" value="Submit">
 </form:form>
 </body>

@@ -12,5 +12,7 @@
     Age: ${customer.age}
     <br>
     Postal Code: ${customer.postalCode}
+    <br>
+    Customer Code : ${customer.customerTag}
 </body>
 </html>

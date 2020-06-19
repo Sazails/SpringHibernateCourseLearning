@@ -1,5 +1,7 @@
 package main.springMVC.Model;
 
+import main.springMVC.Validation.UserTag;
+
 import javax.validation.constraints.*;
 
 public class Customer {
@@ -19,6 +21,17 @@ public class Customer {
 
     @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "5 digits or characters")
     private String postalCode;
+
+    @UserTag(value = "ID_", message = "must start with ID_")
+    private String customerTag;
+
+    public String getCustomerTag() {
+        return customerTag;
+    }
+
+    public void setCustomerTag(String customerTag) {
+        this.customerTag = customerTag;
+    }
 
     public String getPostalCode() {
         return postalCode;
