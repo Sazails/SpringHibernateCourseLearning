@@ -1,2 +1,7 @@
-/target/
-/.idea/
+Learning_Hibernate/target/
+Learning_Hibernate/.idea/
+Learning_Hibernate/*.iml
+
+Learning_Spring/target/
+Learning_Spring/.idea/
+Learning_Spring/*.iml
