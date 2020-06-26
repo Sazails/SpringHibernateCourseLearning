@@ -1,0 +1,27 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- JDBC Database Connection Settings -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/hb_user_tracker?useSSL=false&amp;serverTimezone=UTC</property>
+        <property name="connection.username">hbuser</property>
+        <property name="connection.password">hbuser</property>
+
+        <!-- JDBC Database Connection Pool Settings -->
+        <property name="connection.pool_size">1</property>
+
+        <!-- Select SQL Dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <!-- Echo SQL to stdout -->
+        <property name="show_sql">true</property>
+
+        <!-- Set Current Session Context -->
+        <property name="current_session_context_class">thread</property>
+
+    </session-factory>
+</hibernate-configuration>

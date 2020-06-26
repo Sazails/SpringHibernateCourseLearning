@@ -1,4 +1,4 @@
-package com.sazails;
+package com.sazails.other;
 
 public class Main {
 
