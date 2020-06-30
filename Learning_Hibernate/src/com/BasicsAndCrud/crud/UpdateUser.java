@@ -1,13 +1,13 @@
 package com.BasicsAndCrud.crud;
 
-import com.BasicsAndCrud.entity.User;
+import com.BasicsAndCrud.entity.Student;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 public class UpdateUser {
     public static void main(String[] args) {
-        SessionFactory factory = new Configuration().configure("com/BasicsAndCrud/hibernate.cfg.xml").addAnnotatedClass(User.class).buildSessionFactory();
+        SessionFactory factory = new Configuration().configure("com/BasicsAndCrud/hibernate.cfg.xml").addAnnotatedClass(Student.class).buildSessionFactory();
         Session session = factory.getCurrentSession();
 
         try{
@@ -17,7 +17,7 @@ public class UpdateUser {
             session.beginTransaction();
 
             // Get user object
-            User user = session.get(User.class, userId);
+            Student user = session.get(Student.class, userId);
 
             // Update user
             user.setLastName("Chicken");
@@ -30,7 +30,7 @@ public class UpdateUser {
             session.beginTransaction();
 
             // Update emails
-            session.createQuery("UPDATE User SET email='test@mail.com'").executeUpdate();
+            session.createQuery("UPDATE Student SET email='test@mail.com'").executeUpdate();
 
             // Commit transaction
             session.getTransaction().commit();
