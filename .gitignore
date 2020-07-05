@@ -8,5 +8,6 @@ Learning_Spring/.idea/
 Learning_Spring/*.iml
 
 Web_Customer_Tracker/target/
+Web_Customer_Tracker/out/
 Web_Customer_Tracker/.idea/
 Web_Customer_Tracker/*.iml
