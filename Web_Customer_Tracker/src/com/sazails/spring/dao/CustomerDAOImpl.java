@@ -70,7 +70,6 @@ public class CustomerDAOImpl implements CustomerDAO {
 
         // Search customers by firstName and lastName (search done in lowercase format)
         if(searchName != null && searchName.trim().length() > 0){
-            // Search
             query = session.createQuery("FROM Customer WHERE LOWER(firstName) LIKE :name or LOWER(lastName) LIKE :name", Customer.class);
             query.setParameter("name", "%"+searchName.toLowerCase() + "%");
         }else{
