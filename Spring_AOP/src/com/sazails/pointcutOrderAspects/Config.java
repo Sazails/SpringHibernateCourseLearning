@@ -1,4 +1,4 @@
-package com.sazails.aop;
+package com.sazails.pointcutOrderAspects;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -6,5 +6,5 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @Configuration
 @EnableAspectJAutoProxy
-@ComponentScan("com.sazails.aop")
+@ComponentScan("com.sazails.pointcutOrderAspects")
 public class Config {}
