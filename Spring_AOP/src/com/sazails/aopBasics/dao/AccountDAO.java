@@ -1,6 +1,6 @@
-package com.sazails.aop.dao;
+package com.sazails.aopBasics.dao;
 
-import com.sazails.aop.model.Account;
+import com.sazails.aopBasics.model.Account;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -28,7 +28,7 @@ public class LoggingAspect {
 
             if(a instanceof Account){
                 Account account = (Account) a;
-                System.out.println(getClass() + a.toString());
+                System.out.println(getClass() + account.toString());
             }
         }
     }

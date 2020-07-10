@@ -1,4 +1,4 @@
-package com.sazails.aop.aspect;
+package com.sazails.aopBasics.aspect;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -17,7 +17,7 @@ public class LoggingAspect {
 //    @Before("execution(public void addAccount(com.sazails.aop.model.Account))")
 //    @Before("execution(public void addAccount(com.sazails.aop.model.Account, ..))") // ".." means any number of arguments, while "*" means one argument.
 //    @Before("execution(public void addAccount(..))")
-    @Before("execution(* com.sazails.aop.dao.*.*(..))")
+    @Before("execution(* com.sazails.aopBasics.dao.*.*(..))")
     public void beforeAddAccountAspect(){
         System.out.println(getClass() + " Executing @Before advice on addAccount()");
     }

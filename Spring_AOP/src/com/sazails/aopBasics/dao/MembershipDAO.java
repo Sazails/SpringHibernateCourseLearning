@@ -1,4 +1,4 @@
-package com.sazails.aop.dao;
+package com.sazails.aopBasics.dao;
 
 import org.springframework.stereotype.Component;
 

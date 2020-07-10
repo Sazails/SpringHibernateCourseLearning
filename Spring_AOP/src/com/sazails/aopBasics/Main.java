@@ -1,8 +1,8 @@
-package com.sazails.aop;
+package com.sazails.aopBasics;
 
-import com.sazails.aop.dao.AccountDAO;
-import com.sazails.aop.dao.MembershipDAO;
-import com.sazails.aop.model.Account;
+import com.sazails.aopBasics.dao.AccountDAO;
+import com.sazails.aopBasics.dao.MembershipDAO;
+import com.sazails.aopBasics.model.Account;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {

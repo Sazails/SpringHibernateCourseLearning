@@ -1,5 +1,4 @@
-package com.sazails.aop.model;
-
+package com.sazails.afterReturning.model;
 
 public class Account {
 
@@ -31,9 +30,6 @@ public class Account {
 
     @Override
     public String toString() {
-        return "Account{" +
-                "username='" + username + '\'' +
-                ", score=" + score +
-                '}';
+        return "Account{" + "username='" + username + '\'' + ", score=" + score + '}';
     }
 }
