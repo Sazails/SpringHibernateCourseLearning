@@ -39,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/aspectjweaver-1.9.5.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3034483" />
@@ -147,6 +147,7 @@
       <workItem from="1594031157324" duration="1686000" />
       <workItem from="1594490129727" duration="120000" />
       <workItem from="1594490303670" duration="2990000" />
+      <workItem from="1594495604911" duration="19000" />
     </task>
     <servers />
   </component>

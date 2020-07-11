@@ -1,11 +1,7 @@
 package com.sazails.aroundAdvice;
 
-import com.sazails.aroundAdvice.dao.AccountDAO;
-import com.sazails.aroundAdvice.model.Account;
 import com.sazails.aroundAdvice.service.TrafficFortuneService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import java.util.List;
 
 public class Main {
 

@@ -15,3 +15,8 @@ Web_Customer_Tracker/*.iml
 Spring_AOP/.idea/
 Spring_AOP/out/
 Spring_AOP/*.iml
+
+Web_Customer_Tracker_AOP/target/
+Web_Customer_Tracker_AOP/out/
+Web_Customer_Tracker_AOP/.idea/
+Web_Customer_Tracker_AOP/*.iml
