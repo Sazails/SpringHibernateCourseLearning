@@ -14,8 +14,13 @@
 <body>
     <h2>Login</h2>
     <form:form action="${pageContext.request.contextPath}/authenticateUser" method="post">
-        <%-- Check for error --%>
+        <%-- Check for login error --%>
         <c:if test="${param.error != null}">
+            <i class="error">Invalid username or password entered!</i>
+        </c:if>
+
+        <%-- Check for logout error --%>
+        <c:if test="${param.logout != null}">
             <i class="error">Invalid username or password entered!</i>
         </c:if>
 

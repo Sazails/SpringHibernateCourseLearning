@@ -10,4 +10,10 @@ public class AppController {
     public String showHome(){
         return "home";
     }
+
+    @GetMapping("/admins")
+    public String showAdmins() { return "admins"; }
+
+    @GetMapping("/specials")
+    public String showSpecials() { return "specials"; }
 }

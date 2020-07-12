@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class LoginController {
 
     @GetMapping("/showLoginPage")
-    public String showLoginPage(){
-        return "plain_login";
-    }
+    public String showLoginPage(){ return "fancy_login"; }
+
+    @GetMapping("/access_denied")
+    public String showAccessDeniedPage(){ return "access_denied"; }
 }
