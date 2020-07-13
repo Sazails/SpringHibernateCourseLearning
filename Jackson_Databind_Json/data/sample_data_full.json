@@ -1,0 +1,11 @@
+{
+  "id": "3",
+  "username": "Hugan",
+  "online": false,
+  "userExtraInfo": {
+    "hobby": "Programming",
+    "birthday": "19/04/1999",
+    "languages": ["Russian", "English"]
+  },
+  "ignoreThis": "meme"
+}
