@@ -1,3 +1,5 @@
+package org.sazails;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;

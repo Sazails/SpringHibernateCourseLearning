@@ -1,3 +1,5 @@
+package org.sazails;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -50,7 +52,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "org.sazails.User{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", online=" + online +

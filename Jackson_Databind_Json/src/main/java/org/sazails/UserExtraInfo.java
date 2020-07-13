@@ -1,3 +1,5 @@
+package org.sazails;
+
 import java.util.Arrays;
 
 public class UserExtraInfo {
@@ -39,7 +41,7 @@ public class UserExtraInfo {
 
     @Override
     public String toString() {
-        return "UserExtraInfo{" +
+        return "org.sazails.UserExtraInfo{" +
                 "hobby='" + hobby + '\'' +
                 ", birthday='" + birthday + '\'' +
                 ", languages=" + Arrays.toString(languages) +
