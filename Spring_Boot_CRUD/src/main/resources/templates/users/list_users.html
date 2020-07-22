@@ -9,27 +9,34 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <meta charset="UTF-8">
-    <title>Members List</title>
+    <title>Users List</title>
 </head>
 <body>
 
 <div class="container">
-    <h2>Members List</h2>
+    <h2>Users List</h2>
     <hr>
 
+    <!-- Button -->
+    <a th:href="@{/users/showFormForAdd}" class="btn btn-primary btn-sm mb-3">Add User</a>
     <table class="table table-bordered table-striped">
         <thead class="thead-dark">
         <tr>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
+            <th>Action</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="tempMember : ${members}">
-            <td th:text="${tempMember.firstName}"/>
-            <td th:text="${tempMember.lastName}"/>
-            <td th:text="${tempMember.email}"/>
+        <tr th:each="tempUser : ${users}">
+            <td th:text="${tempUser.firstName}"/>
+            <td th:text="${tempUser.lastName}"/>
+            <td th:text="${tempUser.email}"/>
+            <td>
+                <a th:href="@{/users/showFormForUpdate(userId=${tempUser.id})}" class="btn btn-info btn-sm">Update</a>
+                <a th:href="@{/users/delete(userId=${tempUser.id})}" class="btn btn-danger btn-sm" onclick="if (!(confirm('Delete the user?'))) return false">Delete</a>
+            </td>
         </tr>
         </tbody>
     </table>
